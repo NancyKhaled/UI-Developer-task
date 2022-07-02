@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>UI Developer task</title>
+    <meta
+      content="Nancy Khaled, I am a talented UI Developer."
+      name="description"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Bootstrap, jQuery, Sass"
+    />
+    <meta name="author" content="Nancy Khaled" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Lora:wght@400;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Open+Sans:wght@300;400;500;600&family=Orelega+One&family=Square+Peg&family=Titillium+Web:wght@200;300;400;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/font-awesome/css/all.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/OwlCarousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/OwlCarousel/css/owl.theme.default.min.css"
+    />
+
+    <!-- Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+          * Template URL: https://nancy-khaled.netlify.app/
+          * Author: Nancy Khaled
+          ======================================================== -->
+  </head>
+
+  <body dir="rtl">
+    <!--  Header1  -->
+    <header id="header1">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="date">١٠ محرم ١٤٤١ ه | ٩ سبتمبر ٢٠١٩</div>
+        <ul class="social-info">
+          <li>
+            <a class="whatsapp" target="_blank" href="#"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a class="youtube" target="_blank" href="#"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a class="instagram" target="_blank" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a class="twitter" target="_blank" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a class="facebook" target="_blank" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+        </ul>
+        <ul class="contact-info">
+          <li><a href="#" target="_blank">معلومات عنا</a></li>
+          |
+          <li><a href="#" target="_blank">تواصل معنا</a></li>
+          |
+          <li><a href="#" target="_blank">اعلن معنا</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- End Header1 -->
+
+    <!-- After Header1 -->
+    <aside class="after-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              class="img-thumbnail"
+              src="assets/images/masr-bank.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-md-6 logo">
+            <div class="row">
+              <div class="col-md mt-3">
+                <p class="title">رئيس التحرير</p>
+                <p>ياسر إبراهيم</p>
+              </div>
+              <div class="col-md">
+                <img src="assets/images/logo.png" alt="" srcset="" />
+              </div>
+              <div class="col-md mt-3">
+                <p class="title">رئيس مجلس الادارة</p>
+                <p>محمد حسنيــــــن</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img
+              class="ahaly-bank img-thumbnail"
+              src="assets/images/ahaly-bank.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- End After Header1 -->
+
+    <!-- NavBar -->
+    <header id="header2">
+      <nav class="navbar navbar-expand-lg p-0 navbar-dark" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo.png" alt="" srcset=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#news"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  أخبار
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">الخبر الاول</a></li>
+                  <li><a class="dropdown-item" href="#">الخبر الثاني</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">الخبر الحصري</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#versions"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  اصداراتنا
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">الاصدار الاول</a></li>
+                  <li><a class="dropdown-item" href="#">الاصدار الثاني</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">احدث الاصدارات</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sport">رياضة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#economic">اقتصاد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#art">فن</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">كتاب اليوم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#street">نبض الشارع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">خدماتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#woman">المرأة والمجتمع</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                style="background-color: rgb(69, 69, 69, 40%); border-radius: 0; border: none;"
+                class="form-control me-2"
+                type="search"
+                placeholder="ابحث في اصداراتنا"
+                aria-label="Search"
+              />
+              <button
+                style="color: #fff; background-color: rgb(34, 34, 34, 50%); border-radius: 0;"
+                class="btn"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End NavBar -->
+
+    <!-- home -->
+    <section id="home" class="m-4 clearfix">
+      <div class="container">
+        <div class="row overflow-hidden">
+          <div class="order-lg-first col-lg-3 col-md-6">
+            <article>
+              <span>انفراد</span>
+              <figure>
+                <img
+                  src="assets/images/anfrad.png"
+                  alt=""
+                  srcset=""
+                  style="width:100%"
+                />
+                <figcaption>
+                  انفراد.. شركة أمريكية تقيم مدينة طبية تعليمية بالعاصمة
+                  الإدارية
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+          <div class="col-lg-6 order-md-first">
+            <article>
+              <figure>
+                <img
+                  src="assets/images/ai.png"
+                  alt=""
+                  srcset=""
+                  style="width:100%"
+                />
+                <figcaption>
+                  بشكل فريد من نوعه.. GAC Motor تكشف عن شبيهة بسيدان "تويوتا
+                  كامر
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+          <div class="col-lg-3 col md-6">
+            <aside>
+              <h4>كتاب اليوم</h4>
+              <div class="row content">
+                <div class="col-3">
+                  <span></span>
+                </div>
+                <div class="col-9">
+                  <h6>مكرم محمد أحمد</h6>
+                  <p>حزب أردوغان يتفكك ويندثر</p>
+                </div>
+              </div>
+              <div class="row content active-aside">
+                <div class="col-3">
+                  <span></span>
+                </div>
+                <div class="col-9">
+                  <h6>صلاح منتصر</h6>
+                  <p>مجرد رأى مستقبل المحروسة</p>
+                </div>
+              </div>
+              <div class="row content">
+                <div class="col-3">
+                  <span></span>
+                </div>
+                <div class="col-9">
+                  <h6>فاروق جويدة</h6>
+                  <p>حتى يستعيد الفن المصرى مكانته</p>
+                </div>
+              </div>
+              <div class="row content">
+                <div class="col-3">
+                  <span></span>
+                </div>
+                <div class="col-9">
+                  <h6>سناء البيسي</h6>
+                  <p>«المقاولين العرب».. رجالات فوق السقالات</p>
+                </div>
+              </div>
+              <div class="row content">
+                <div class="col-3">
+                  <span></span>
+                </div>
+                <div class="col-9">
+                  <h6>عبد المحسن سلامة</h6>
+                  <p>الفرص والتحديات فى الشراكة اليابانية ـ الإفريقية</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <!-- slider -->
+      <div class="slider mt-5 mb-5">
+        <h5 class="title">اصدارات</h5>
+        <div class="row content">
+          <div class="col-md-2">
+            <h5 class="slider-title">
+              الطب في عصر الانترنت خدمة ام تهديد للحياة؟!
+            </h5>
+          </div>
+          <div class="col-md-8">
+            <div class="owl-carousel">
+              <div>
+                <img src="assets/images/slider/book4.png" alt="" srcset="" />
+              </div>
+              <div>
+                <img src="assets/images/slider/book3.png" alt="" srcset="" />
+              </div>
+              <div>
+                <img src="assets/images/slider/book2.png" alt="" srcset="" />
+              </div>
+              <div>
+                <img src="assets/images/slider/book1.png" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="option">
+          <a class="download"><i class="fas fa-file-download"></i> تحميل</a>
+          <span class="num">العدد 120</span>
+        </div>
+      </div>
+      <!-- end slider -->
+    </section>
+    <!-- end home -->
+
+    <!-- sport -->
+    <section id="sport" class="sport pt-5 pb-5 clearfix">
+      <div class="container">
+        <div class="row title justify-content-between align-items-center">
+          <div class="col-3">
+            <h4>رياضة</h4>
+          </div>
+          <div class="col-3">
+            <a href="#">المزيد<span> ...</span></a>
+          </div>
+          <hr />
+        </div>
+        <div class="filter">
+          <ul
+            class="d-flex flex-wrap justify-content-center bd-lg-highlight p-0"
+          >
+            <li id="yesterday">امس</li>
+            <li class="today" id="today">اليوم</li>
+            <li id="tomorrow">غدا</li>
+            <li class="alink me-auto bd-lg-highlight" id="all">
+              تعرف علي جميع المباريات <i class="fas fa-angle-left"></i>
+            </li>
+          </ul>
+
+          <div class="row content text-center mt-4">
+            <div class="col-md-6 col-lg-3 tomorrow match">
+              <h6>امم افريقيا</h6>
+              <div class="row align-items-center">
+                <div class="col">
+                  <img src="assets/images/sport/egypt.png" alt="" srcset="" />
+                  <p>مصر</p>
+                </div>
+                <div class="col">
+                  <div class="time">6:55AM</div>
+                  <p>لم تبدا</p>
+                </div>
+                <div class="col">
+                  <img src="assets/images/sport/afrecia.png" alt="" srcset="" />
+                  <p>زيمبابوي</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 today match">
+              <h6>امم افريقيا</h6>
+              <div class="row align-items-center">
+                <div class="col">
+                  <img src="assets/images/sport/egypt.png" alt="" srcset="" />
+                  <p>مصر</p>
+                </div>
+                <div class="col">
+                  <div class="scor">2 - 5</div>
+                  <p>د 45</p>
+                </div>
+                <div class="col">
+                  <img src="assets/images/sport/afrecia.png" alt="" srcset="" />
+                  <p>زيمبابوي</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 today match">
+              <h6>امم افريقيا</h6>
+              <div class="row align-items-center">
+                <div class="col">
+                  <img src="assets/images/sport/egypt.png" alt="" srcset="" />
+                  <p>مصر</p>
+                </div>
+                <div class="col">
+                  <div class="scor">1 - 0</div>
+                  <p>استراحة الشوط الاول</p>
+                </div>
+                <div class="col">
+                  <img src="assets/images/sport/afrecia.png" alt="" srcset="" />
+                  <p>زيمبابوي</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 yesterday match">
+              <h6>امم افريقيا</h6>
+              <div class="row align-items-center">
+                <div class="col">
+                  <img src="assets/images/sport/egypt.png" alt="" srcset="" />
+                  <p>مصر</p>
+                </div>
+                <div class="col">
+                  <div class="scor">1 - 6</div>
+                  <p>انتهت المباراة</p>
+                </div>
+                <div class="col">
+                  <img src="assets/images/sport/afrecia.png" alt="" srcset="" />
+                  <p>زيمبابوي</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end sport -->
+
+    <!-- economic -->
+    <section id="economic" class="economic mt-4 mb-4 clearfix">
+      <div class="container">
+        <div class="row title justify-content-between align-items-center">
+          <div class="col-3">
+            <h4>اقتصاد</h4>
+          </div>
+          <div class="col-3">
+            <a href="#">المزيد<span> ...</span></a>
+          </div>
+          <hr />
+        </div>
+        <div class="content mt-2">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="eco-news">
+                <img src="assets/images/eco/eco1.png" alt="" srcset="" />
+                <div class="text">
+                  <div class="icon"><i class="fas fa-play"></i></div>
+                  <h5>البرصة والاعمال</h5>
+                  <p>حصاد البورصة.. 10.9 مليار جنيه أرباح خلال أسبوع</p>
+                  <span><i class="fas fa-clock"></i> منذ5 دقائق</span>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="eco-news">
+                  <img src="assets/images/eco/eco2.png" alt="" srcset="" />
+                  <div class="text">
+                    <div class="icon"><i class="fas fa-camera"></i></div>
+                    <h5>اسعار العملات</h5>
+                    <p>
+                      ترامب: اليورو يهبط أمام الدولار ومجلس الاحتياطى الاتحادى
+                    </p>
+                    <span><i class="fas fa-clock"></i> منذ5 دقائق</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center row2">
+              <div class="col-md-6 col-lg-4">
+                <div class="eco-news">
+                  <img src="assets/images/eco/eco3.png" alt="" srcset="" />
+                  <div class="text">
+                    <div class="icon"><i class="fas fa-file-alt"></i></div>
+                    <h5>تجارة وصناعة</h5>
+                    <p>إنتاج المصانع اليابانية يزيد 1.3% فى يوليو متجاوزاً متوسط التوق</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="eco-news">
+                  <img src="assets/images/eco/eco4.png" alt="" srcset="" />
+                  <div class="text">
+                    <div class="icon"><i class="fas fa-file-alt"></i></div>
+                    <h5>البورصة العملات</h5>
+                    <p>
+                      بورصة قطر تخسر 13.9 مليار ريال..ومؤشرها العام يتراجع بنسبة 2.59
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="eco-news">
+                  <img src="assets/images/eco/eco5.png" alt="" srcset="" />
+                  <div class="text">
+                    <div class="icon"><i class="fas fa-file-alt"></i></div>
+                    <h5>اسعار النفط</h5>
+                    <p>
+                      أسعار النفط تهبط وتنتظر أكبر مكسب أسبوعى بفعل آمال التجارة
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end economic -->
+
+    <!-- news -->
+    <section id="news" class="news mt-4 pt-4 pb-4 clearfix">
+      <div class="container">
+        <div class="row">
+<!---->
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col">
+                <div class="img1">
+                  <div class="text">
+                    <h6>صورة اليوم</h6>
+                    <p>فرحة التلاميذ بدء اول يوم دراسة للعام الجديد</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-start">
+              <div class="col-10">
+                <div class="img6">
+                  <div class="text">
+                    <h6>اقتصاد وبورصة</h6>
+                    <p>الأمير هارى يشارك فى إحياء ذكرى إطلاق ألعاب "إنفيكتوس"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!---->
+          <div class="col-md-5">
+
+            <div class="row">
+              <div class="col">
+                <div class="img2">
+                  <div class="text">
+                    <h6>حرائق امازون</h6>
+                    <p>اندلاع حرائق هائلة فى غابات الأمازون بولاية روندونيا بالبرازيل</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-around">
+              <div class="col-10">
+                <div class="img4">
+                  <div class="text">
+                    <h6>حدث اليوم</h6>
+                    <p>إشعال الأضواء بنيويورك لإحياء ذكرى هجمات 11 سبتمبر</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="img7">
+                  <div class="text">
+                    <h6>تعليم</h6>
+                    <p>المدراس تستقبل تلاميذ الصفوف الأولى ورياض الأطفال بأول يوم دراس</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+<!---->
+          <div class="col-md-3">
+            <div class="row justify-content-end">
+              <div class="col">
+                <div class="img3">
+                  <div class="text">
+                    <h6>المرأة والطفل</h6>
+                    <p>إطلالات مميزة بأسبوع الموضة فى نيويورك</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="img5">
+                  <div class="text">
+                    <h6>صورة اليوم</h6>
+                    <p>بعد جولته الإفريقية.. البابا فرنسيس يعقد لقاءه الأسبوعى بالفاتي</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!---->
+        </div>
+      </div>
+    </section>
+    <!-- end news -->
+
+    <!-- woman -->
+    <section id="woman" class="woman pt-4 pb-4 clearfix">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <div class="title">
+              <h4>المرأة والمجتمع</h4>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="col-3">
+            <a href="#">المزيد<span> ...</span></a>
+          </div>
+          <hr />
+        </div>
+        <div class="content">
+          <div class="big-img">
+            <img src="assets/images/woman/big-w.png" alt="" srcset="">
+            <p>تعرف على تشكيلة ملابس الحوامل الجديدة صيف 2019</p>
+          </div>
+          <div class="right-content">
+            <div class="item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/images/woman/w1.png" alt="" srcset="">
+                </div>
+                <div class="col-6">
+                  <h6>اكسسوارات</h6>
+                  <p>بالصور: اكسسوارات باللون الوردي لإطلالاتك هذا الصيف</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/images/woman/w2.png" alt="" srcset="">
+                </div>
+                <div class="col-6">
+                  <h6>اطلالة النجمات</h6>
+                  <p>أبرز إطلالات ماريا كاري بالفستان القصير</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-6">
+                  <img src="assets/images/woman/w3.png" alt="" srcset="">
+                </div>
+                <div class="col-6">
+                  <h6>ملابس المحجبات</h6>
+                  <p>نجود الشمري يوتيوبر سعودية تتقن إطلالات الحجاب</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---->
+          <div class="left-content">
+            <div class="item">
+              <div class="row">
+                <div class="col-6">
+                  <h6>للرجل</h6>
+                  <p>باريش أردوتش نجم "حب للإيجار" بأجمل الإطلالات</p>
+                </div>
+                <div class="col-6">
+                  <img src="assets/images/woman/w4.png" alt="" srcset="">
+                </div>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="row">
+                <div class="col-6">
+                  <h6>عبايات وازياء</h6>
+                  <p>الفاشينيستا "آية فيصل" بالعباية على الانستقرام</p>
+                </div>
+                <div class="col-6">
+                  <img src="assets/images/woman/w5.png" alt="" srcset="">
+                </div>
+              </div>
+            </div>
+          
+            <div class="item">
+              <div class="row">
+                <div class="col-6">
+                  <h6>ملابس المحجبات</h6>
+                  <p>أزياء محجبات تظهركِ أكثر طولا</p>
+                </div>
+                <div class="col-6">
+                  <img src="assets/images/woman/w6.png" alt="" srcset="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end woman -->
+
+    <footer class="pt-4 pb-5 text-center">
+      <div class="container">
+        <span>كليكس اجيبت تم تصميمة و تطويره بواسطة</span>
+        <img src="assets/images/logo.png" alt="" srcset="">
+        <hr>
+        <div class="email">
+          <h5>النشرة البريدية</h5>
+          <form>
+            <input type="email" id="email" name="email" placeholder="ادخل البريد الالكتروني">            
+            <button type="submit">ارسال</button>
+          </form>
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a class="nav-link" href="#home">الصفحة الرئيسية</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#news">
+                الأخبار
+              </a>
+            </li>
+            <li>
+              <a class="nav-link">
+                اصداراتنا
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sport">رياضة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#economic">اقتصاد</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">خدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">كتاب</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cars">السيارات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">خدمات تهمك</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">وفيات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul class="social-info">
+            <li>
+              <a class="whatsapp" target="_blank" href="#"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a class="youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a class="instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- back to top arrow -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="fas fa-angle-up"></i
+    ></a>
+    <!-- end back to top arrow -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/OwlCarousel/js/owl.carousel.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
